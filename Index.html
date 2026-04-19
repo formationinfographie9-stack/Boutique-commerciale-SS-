@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORY SIDIKI | Prêt-à-Porter & Souliers de Luxe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        h1, h2, .brand-font { font-family: 'Playfair Display', serif; }
+
+        .product-card:hover img { transform: scale(1.05); }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
+
+        .payment-card {
+            background: linear-gradient(145deg, #ffffff, #f3f4f6);
+            border: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Bouton WhatsApp Flottant -->
+    <a href="https://wa.me/22601273798" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl font-bold tracking-tighter border-2 border-black px-2 text-red-600">S</span>
+                    <span class="text-3xl font-bold tracking-tighter border-2 border-black px-2 text-green-600 ml-[-8px]">S</span>
+                    <span class="text-xs font-light tracking-[0.4em] uppercase hidden sm:block ml-4 text-gray-500">Sory Sidiki</span>
+                </div>
+                <div class="hidden lg:flex space-x-10 text-xs uppercase tracking-widest font-semibold">
+                    <a href="#collections" class="hover:text-amber-700 transition">Collections</a>
+                    <a href="#paiement" class="hover:text-amber-700 transition">Paiement</a>
+                    <a href="#reseaux" class="hover:text-amber-700 transition">Réseaux</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="https://www.facebook.com/profile.php?id=100063652407193" target="_blank" class="text-xl hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@amour_divine.226?_r=1&_t=ZN-95fqJmBKHKg" target="_blank" class="text-xl hover:text-pink-600"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/22601273798" target="_blank" class="text-xl hover:text-green-600"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-black text-white">
+        <div class="absolute inset-0 opacity-50">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2070" alt="Mode Burkina" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <p class="uppercase tracking-[0.6em] text-xs mb-6 font-light">Haute Qualité & Distinction</p>
+            <h1 class="text-5xl md:text-8xl mb-10 brand-font leading-tight">L'Élégance Pure <br> à Ouagadougou</h1>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#collections" class="bg-white text-black px-10 py-4 hover:bg-gray-200 transition uppercase tracking-widest text-xs font-bold">Voir la Collection</a>
+                <a href="#paiement" class="border border-white text-white px-10 py-4 hover:bg-white hover:text-black transition uppercase tracking-widest text-xs font-bold">Paiement OM/Wave</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="py-24 max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl mb-16 brand-font">Nos Articles Premium</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Article 1 -->
+            <div class="product-card group">
+                <div class="relative overflow-hidden aspect-[3/4] mb-6 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-700" alt="Habits Luxe">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Prêt-à-Porter</h3>
+                <p class="text-gray-500 text-sm uppercase tracking-widest">Vestiaire Masculin & Féminin</p>
+            </div>
+            <!-- Article 2 -->
+            <div class="product-card group">
+                <div class="relative overflow-hidden aspect-[3/4] mb-6 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-700" alt="Chaussures Luxe">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Souliers & Mocassins</h3>
+                <p class="text-gray-500 text-sm uppercase tracking-widest">Cuir & Confort Absolu</p>
+            </div>
+            <!-- Article 3 -->
+            <div class="product-card group">
+                <div class="relative overflow-hidden aspect-[3/4] mb-6 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-700" alt="Accessoires">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Accessoires</h3>
+                <p class="text-gray-500 text-sm uppercase tracking-widest">Maroquinerie de Luxe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paiement -->
+    <section id="paiement" class="py-24 bg-gray-50 text-center px-6">
+        <h2 class="text-4xl mb-12 brand-font">Mode de Règlement</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="payment-card p-10 rounded-2xl">
+                <i class="fas fa-mobile-alt text-4xl mb-6 text-orange-500"></i>
+                <h4 class="text-lg font-bold mb-2 uppercase">Orange Money / Wave</h4>
+                <p class="text-2xl font-bold text-gray-800 tracking-wider">+226 65 07 43 72</p>
+                <p class="text-xs text-gray-400 mt-2 italic">(Paiement sécurisé au Burkina)</p>
+            </div>
+            <div class="payment-card p-10 rounded-2xl border-green-200">
+                <i class="fab fa-whatsapp text-4xl mb-6 text-green-500"></i>
+                <h4 class="text-lg font-bold mb-2 uppercase">Service Client</h4>
+                <a href="https://wa.me/22601273798" class="text-2xl font-bold text-gray-800 hover:text-green-600 transition tracking-wider">+226 01 27 37 98</a>
+                <p class="text-xs text-gray-400 mt-2 italic">(Disponible pour conseils & commandes)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social -->
+    <section id="reseaux" class="py-24 bg-black text-white text-center">
+        <h2 class="text-4xl mb-12 brand-font">Suivez l'Univers SS</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-6 px-6">
+            <a href="https://www.facebook.com/profile.php?id=100063652407193" target="_blank" class="flex items-center justify-center space-x-4 bg-blue-600 p-6 rounded-xl hover:bg-blue-700 transition">
+                <i class="fab fa-facebook text-3xl"></i>
+                <span class="font-bold">Facebook Sory Sidiki</span>
+            </a>
+            <a href="https://www.tiktok.com/@amour_divine.226?_r=1&_t=ZN-95fqJmBKHKg" target="_blank" class="flex items-center justify-center space-x-4 bg-pink-600 p-6 rounded-xl hover:bg-pink-700 transition">
+                <i class="fab fa-tiktok text-3xl"></i>
+                <span class="font-bold">TikTok Sory Sidiki</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 text-center border-t border-gray-100">
+        <span class="text-4xl font-bold tracking-tighter border-2 border-black px-2 mb-6 inline-block">SS</span>
+        <p class="text-gray-500 text-sm max-w-md mx-auto mb-8 px-6 italic">"L'élégance n'est pas de se faire remarquer, mais de se faire oublier par sa distinction."</p>
+        <p class="text-xs text-gray-400 uppercase tracking-widest">&copy; 2026 SORY SIDIKI. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+
+```
